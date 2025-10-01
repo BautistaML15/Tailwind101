@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+.grid{
+    @apply grid grid-cols-1 gap-5 md:text-center md:grid-cols-4 lg:grid-cols-8 m-3;
+}
+
+.grid-child{
+    @apply p-2 bg-pink-200 md:col-span-2 rounded-lg;
+}
+
+.sec-grid{
+    @apply p-10 m-15 -mt-7 rounded-lg shadow-lg bg-[#E2C391];
+}
+
+.p-sec{
+    @apply text-center lg:text-left xl:text-left decoration-dotted capitalize indent-8;
+}
+
+.p-class{
+    @apply text-[#3E1E68] underline decoration-red-500 decoration-2 underline-offset-2;
+}
+
+.h1-name{
+    @apply font-serif text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold uppercase;
+}
+
+.con-top{
+    @apply bg-[#F6E27F] p-8 rounded-t-lg shadow-lg;
+}
+
+.con-bot{
+    @apply md:text-lg/6 lg:text-xl/5 xl:text-xl/7 bg-[#E2C391] p-8 rounded-b-lg p-2 shadow-lg;
+}
